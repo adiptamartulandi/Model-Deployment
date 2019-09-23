@@ -1,6 +1,7 @@
 # 🎈 🎉 Model Deployment 🎊 🎈 📚 
 
-Pada Repository ini, terdiri dari code dan dataset untuk melakukan Model Deployment di Python Anywhere dan Tes di Postman
+- Pada Repository ini, terdiri dari code dan dataset untuk melakukan Model Deployment di Python Anywhere dan Tes di Postman.
+- Deployment kali ini menggunakan web framework Flask.
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖  
 
 # Contents
@@ -17,7 +18,7 @@ Pada Repository ini, terdiri dari code dan dataset untuk melakukan Model Deploym
 # Code dan Dataset
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 
-- Code terdiri dari training dan testing untuk membuat model.
+- Code terdiri dari training dan testing untuk membuat model dan input_data.txt .
 - Model yang paling optimal yang saya gunakan adalah random forest
 - Code terdiri dari model.py, request.py, dan server.py
 
@@ -51,11 +52,10 @@ Lalu kembali ke bagian tab web dan reload.
 # Testing Model di Postman
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 
-- Langkah selanjutnya membuat server di pythonanywhere.
-- Jika belum punya akun maka sign up terlebih dahulu.
-- Di tab web, klik add new web app.
-- Di bagian console, klik yang bash lalu install beberapa packages yang akan digunakan. Contohnya adalah pip install --user flask_cors numpy pandas
-- Lalu klik di bagian files dan klik mysite dan upload file .pkl.
-- Setelah itu edit file flask_app.py dan ganti sesuai dengan yang ada di file server.py.
-Lalu kembali ke bagian tab web dan reload.
-- Lalu endpoints API kita sudah ada yaitu username.pythonanywhere.com/api
+- Buka software postman.
+- Pada kiri pojok atas klik New untuk membuat request baru dan pilih POST.
+- Di bagian header, pada bagian key pilih Content-type dan pada bagian value pilih application/json.
+- Pada bagian request url masukan url endpoints API kita yaitu pada case ini adalah adiptamartulandi.pythonanywhere.com/api
+- Lalu untuk memasukan data pilih tab Body, pilih raw dan pilih jenis datanya adalah JSON.
+- Masukan data sesuai yang ada di input_data.txt di folder data.
+- Lalu klik Send!
