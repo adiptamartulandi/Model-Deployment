@@ -8,6 +8,7 @@
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖  
 
 - Code dan Dataset
+- Penjelasan Feature
 - Membuat model dy sublime text
 - Membuat Pickle file di anaconda prompt 
 - Deployment Model di PythonAnywhere
@@ -19,22 +20,38 @@
 # Code dan Dataset
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 
-- Data terdiri dari training dan testing untuk membuat model dan input_data.txt .
+- Data terdiri dari training dan testing untuk membuat model dan input_data.txt.
+- Untuk Case ini, Data yang digunakan adalah german credit dan tujuan dari pemodelan ini adalah untuk menentukan Credit Scoring apakah seorang kreditur layak menerima kredit dari bank atau tidak.
 - Model yang paling optimal yang saya gunakan adalah random forest
 - Code terdiri dari model.py, request.py, dan server.py
+
+# Penjelasan Feature
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+- Deskripsi features di dataset:
+    1. ID = nomor urut pelanggan
+    2. LIMIT_BAL = Batas maksimal kredit
+    3. Marriage = status pernikahan (1,2,3)
+    4. education = status pendidikan (1,2,3,4)
+    5. Sex = jenis kelamin (1,2)
+    6. Age = umur
+    7. Pay = pembayaran telat atau tidak di bulan 1,2,3
+    8. bill amt = jumlah tagihan bulan 1,2,3
+    9. pay amt = jumlah bayar bulan 1,2,3
+    10. target = terlambat atau tidak
 
 # Membuat model di sublime text
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 
-- Langkah pertama adalah membuat model python menggunakan text editor, pada tutorial kali ini saya menggunakan Sublime Text.
-- Untuk detail codenya bisa dilihat pada file model.py
+- Langkah pertama adalah membuat model python menggunakan text editor, pada kesempatan kali ini saya menggunakan Sublime Text.
+- Untuk detail codenya bisa dilihat pada file model.py.
+- Model.py ini lalu kita dump ke dalam format pickle atau .pkl agar bisa masuk ke dalam produksi.
 
 # Membuat pickle file
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 
 - Lalu setelah itu model.py bisa dijalankan di anaconda prompt dengan cara berikut ini:
   1. g: --> karena file model.py ada di drive G
-  2. cd G:\Bootcamp\Materi\21. Deployment\credit-scoring\code
+  2. cd G:\Bootcamp\Materi\21. Deployment\credit-scoring\code --> letak file model.py saya.
   3. lalu ketik python model.py
   4. file .pkl akan terbentuk di folder yang sama
   
@@ -44,22 +61,24 @@
 - Langkah selanjutnya membuat server di pythonanywhere.
 - Jika belum punya akun maka sign up terlebih dahulu.
 - Di tab web, klik add new web app.
-- Di bagian console, klik yang bash lalu install beberapa packages yang akan digunakan. Contohnya adalah pip install --user flask_cors numpy pandas
-- Lalu klik di bagian files dan klik mysite dan upload file .pkl.
+  1. lalu di halaman yang muncul pilih flask, lalu pilih versi python dan klik ok.
+- Selanjutnya Di bagian console, klik yang bash lalu install beberapa packages yang akan digunakan. Contohnya adalah pip install --user flask_cors numpy pandas
+- Lalu klik di bagian files dan klik mysite dan upload file kita yang sudah berbentuk .pkl.
 - Setelah itu edit file flask_app.py dan ganti sesuai dengan yang ada di file server.py.
-Lalu kembali ke bagian tab web dan reload.
+- Lalu kembali ke bagian tab web dan reload.
 - Lalu endpoints API kita sudah ada yaitu username.pythonanywhere.com/api
 
 # Testing Model di Postman
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 
 - Buka software postman.
-- Pada kiri pojok atas klik New untuk membuat request baru dan pilih POST.
+- Pada kiri pojok atas klik New untuk membuat request baru dan pilih command POST.
 - Di bagian header, pada bagian key pilih Content-type dan pada bagian value pilih application/json.
 - Pada bagian request url masukan url endpoints API kita yaitu pada case ini adalah adiptamartulandi.pythonanywhere.com/api
 - Lalu untuk memasukan data pilih tab Body, pilih raw dan pilih jenis datanya adalah JSON.
 - Masukan data sesuai yang ada di input_data.txt di folder data.
 - Lalu klik Send!
+- Hasilnya akan muncul!
 
 # Interpretasi Hasil
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
