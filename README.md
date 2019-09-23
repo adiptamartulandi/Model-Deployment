@@ -65,6 +65,7 @@
 - Selanjutnya Di bagian console, klik yang bash lalu install beberapa packages yang akan digunakan. Contohnya adalah pip install --user flask_cors numpy pandas
 - Lalu klik di bagian files dan klik mysite dan upload file kita yang sudah berbentuk .pkl.
 - Setelah itu edit file flask_app.py dan ganti sesuai dengan yang ada di file server.py.
+    1. Lebih jelasnya bisa dilihat disini https://www.pythonanywhere.com/user/adiptamartulandi/shares/e346c706fd4b471e8f779ea364963ec8/
 - Lalu kembali ke bagian tab web dan reload.
 - Lalu endpoints API kita sudah ada yaitu username.pythonanywhere.com/api
 
