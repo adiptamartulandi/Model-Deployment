@@ -11,7 +11,8 @@
 - Membuat model dy sublime text
 - Membuat Pickle file di anaconda prompt 
 - Deployment Model di PythonAnywhere
-- Testing di Postman 	
+- Testing di Postman
+- Interpretasi
 
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 
@@ -59,3 +60,9 @@ Lalu kembali ke bagian tab web dan reload.
 - Lalu untuk memasukan data pilih tab Body, pilih raw dan pilih jenis datanya adalah JSON.
 - Masukan data sesuai yang ada di input_data.txt di folder data.
 - Lalu klik Send!
+
+# Interpretasi Hasil
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+
+- Ketika hasil menunjukan 'Tidak Lolos Scoring' Maka orang tersebut memiliki kecendurungan untuk tidak bisa membayar kredit jadi tidak diberi kredit oleh kreditur.
+- Ketika hasil menunjukan 'Lolos Credit Scoring' Maka orang tersebut mampu membayar credit sehingga bisa diberi kredit oleh kreditur.
