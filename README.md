@@ -18,7 +18,7 @@
 # Code dan Dataset
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 
-- Code terdiri dari training dan testing untuk membuat model dan input_data.txt .
+- Data terdiri dari training dan testing untuk membuat model dan input_data.txt .
 - Model yang paling optimal yang saya gunakan adalah random forest
 - Code terdiri dari model.py, request.py, dan server.py
 
