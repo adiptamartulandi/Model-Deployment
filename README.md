@@ -78,6 +78,8 @@
 - Pada bagian request url masukan url endpoints API kita yaitu pada case ini adalah adiptamartulandi.pythonanywhere.com/api
 - Lalu untuk memasukan data pilih tab Body, pilih raw dan pilih jenis datanya adalah JSON.
 - Masukan data sesuai yang ada di input_data.txt di folder data.
+    1. Jangan lupa format data harus json.
+    2. data yang ada di input_data.txt formatnya sudah seperti json.
 - Lalu klik Send!
 - Hasilnya akan muncul!
 
